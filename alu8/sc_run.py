@@ -22,9 +22,7 @@ from siliconcompiler.tools.execute.exec_input import ExecInputTask
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-# En macOS con Homebrew, --trace-fst de Verilator necesita liblz4, que no
-# vive en una ruta de include/link por defecto. En Linux (apt/dnf) no hace
-# falta nada de esto.
+
 LZ4_PREFIXES = ("/opt/homebrew/opt/lz4", "/usr/local/opt/lz4")
 
 VERILATOR_WARNINGS_OFF = [
@@ -100,3 +98,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
